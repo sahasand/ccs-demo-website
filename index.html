@@ -114,7 +114,7 @@
         .sonar-ring {
             position: absolute;
             top: 50%; left: 75%;
-            width: 600px; height: 600px;
+            width: clamp(200px, 80vw, 600px); height: clamp(200px, 80vw, 600px);
             border-radius: 50%;
             border: 1px solid rgba(184,149,62,0.2);
             animation: sonarPulse 3s ease-out infinite;
@@ -161,7 +161,7 @@
             transition: max-height 0.4s ease, padding 0.3s ease;
         }
         .accordion-content.open {
-            max-height: 200px;
+            max-height: 300px;
             padding-top: 0.75rem;
             padding-bottom: 0.25rem;
         }
@@ -384,32 +384,32 @@
         <div class="max-w-6xl mx-auto px-5 sm:px-6 lg:px-8 relative z-10">
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 lg:gap-4">
                 <div class="text-center reveal-scale stagger-1">
-                    <div class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2" data-counter="1997">1997</div>
+                    <div class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2" data-counter="1997">1997</div>
                     <p class="font-body text-[0.7rem] text-gray-400 uppercase tracking-[0.15em]">Founded by Cardiologists</p>
                 </div>
                 <div class="text-center relative reveal-scale stagger-2">
                     <div class="hidden lg:block absolute left-0 top-4 bottom-4 w-px bg-gold/20"></div>
-                    <div class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2">2,500+</div>
+                    <div class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2">2,500+</div>
                     <p class="font-body text-[0.7rem] text-gray-400 uppercase tracking-[0.15em]">Specialized CV Sites</p>
                 </div>
                 <div class="text-center relative reveal-scale stagger-3">
                     <div class="hidden lg:block absolute left-0 top-4 bottom-4 w-px bg-gold/20"></div>
-                    <div class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2" data-counter="16">16</div>
+                    <div class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2" data-counter="16">16</div>
                     <p class="font-body text-[0.7rem] text-gray-400 uppercase tracking-[0.15em]">Countries</p>
                 </div>
                 <div class="text-center relative reveal-scale stagger-4">
                     <div class="hidden lg:block absolute left-0 top-4 bottom-4 w-px bg-gold/20"></div>
-                    <div class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2">I&ndash;III</div>
+                    <div class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2">I&ndash;III</div>
                     <p class="font-body text-[0.7rem] text-gray-400 uppercase tracking-[0.15em]">Full Phase Range</p>
                 </div>
                 <div class="text-center relative reveal-scale stagger-5">
                     <div class="hidden lg:block absolute left-0 top-4 bottom-4 w-px bg-gold/20"></div>
-                    <div class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2" data-counter="94" data-suffix="%">94%</div>
+                    <div class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2" data-counter="94" data-suffix="%">94%</div>
                     <p class="font-body text-[0.7rem] text-gray-400 uppercase tracking-[0.15em]">Team Continuity</p>
                 </div>
                 <div class="text-center relative reveal-scale stagger-6">
                     <div class="hidden lg:block absolute left-0 top-4 bottom-4 w-px bg-gold/20"></div>
-                    <div class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2" data-counter="0">0</div>
+                    <div class="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gold mb-2" data-counter="0">0</div>
                     <p class="font-body text-[0.7rem] text-gray-400 uppercase tracking-[0.15em]">FDA Complete Response Letters</p>
                 </div>
             </div>
@@ -430,9 +430,9 @@
             <!-- Founders — Editorial spread -->
             <div class="relative">
                 <!-- Center dividing line (desktop only) -->
-                <div class="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px bg-gold/20 -translate-x-1/2"></div>
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gold/20 -translate-x-1/2"></div>
 
-                <div class="grid lg:grid-cols-2 gap-16 lg:gap-20 mb-16">
+                <div class="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-20 mb-16">
                     <!-- Konstam — Left-aligned -->
                     <div class="reveal-left stagger-1">
                         <div class="flex items-start gap-6 mb-8">
@@ -466,7 +466,7 @@
 
                     <!-- Udelson — Right-aligned, mirrored -->
                     <div class="reveal-right stagger-2">
-                        <div class="flex items-start gap-6 mb-8 lg:flex-row-reverse lg:text-right">
+                        <div class="flex items-start gap-6 mb-8 md:flex-row-reverse md:text-right">
                             <div class="relative flex-shrink-0">
                                 <svg viewBox="0 0 200 200" class="w-28 h-28 sm:w-36 sm:h-36">
                                     <circle cx="100" cy="100" r="98" fill="#1a2744"/>
@@ -483,7 +483,7 @@
                             Chief of Cardiology, Tufts Medical Center. Writes the nuclear cardiology chapter in Braunwald's Heart Disease. Past President of ASNC. Led the pivotal flurpiridaz F-18 PET trials.
                         </p>
                         <!-- Pull quote -->
-                        <blockquote class="relative pl-6 border-l-4 border-gold/50 lg:border-l-0 lg:border-r-4 lg:pl-0 lg:pr-6 lg:text-right">
+                        <blockquote class="relative pl-6 border-l-4 border-gold/50 md:border-l-0 md:border-r-4 md:pl-0 md:pr-6 md:text-right">
                             <span class="absolute -top-6 font-display text-6xl text-gold/25 leading-none lg:right-0" style="left: -4px;">&ldquo;</span>
                             <p class="font-display text-xl sm:text-2xl italic text-navy leading-relaxed">
                                 When your FDA reviewer asks who read your PET images, you want that answer to end the conversation.
@@ -538,19 +538,19 @@
 
             <div class="space-y-10 mb-12">
                 <div class="flex items-start gap-6 reveal-left stagger-1">
-                    <span class="font-display text-5xl font-bold text-ccsred opacity-40 leading-none flex-shrink-0 pt-1">01</span>
+                    <span class="font-display text-3xl sm:text-5xl font-bold text-ccsred opacity-40 leading-none flex-shrink-0 pt-1">01</span>
                     <p class="font-body text-lg text-gray-300 leading-relaxed">
                         <strong class="text-white">Team rotation.</strong> The scientists who win your business disappear after kickoff, replaced by junior associates learning your protocol on the fly.
                     </p>
                 </div>
                 <div class="flex items-start gap-6 reveal-left stagger-2">
-                    <span class="font-display text-5xl font-bold text-ccsred opacity-40 leading-none flex-shrink-0 pt-1">02</span>
+                    <span class="font-display text-3xl sm:text-5xl font-bold text-ccsred opacity-40 leading-none flex-shrink-0 pt-1">02</span>
                     <p class="font-body text-lg text-gray-300 leading-relaxed">
                         <strong class="text-white">Late data engagement.</strong> Biostatisticians join at database lock instead of protocol concept &mdash; and spend months untangling what should have been designed correctly from the start.
                     </p>
                 </div>
                 <div class="flex items-start gap-6 reveal-left stagger-3">
-                    <span class="font-display text-5xl font-bold text-ccsred opacity-40 leading-none flex-shrink-0 pt-1">03</span>
+                    <span class="font-display text-3xl sm:text-5xl font-bold text-ccsred opacity-40 leading-none flex-shrink-0 pt-1">03</span>
                     <p class="font-body text-lg text-gray-300 leading-relaxed">
                         <strong class="text-white">Scope creep.</strong> Conservative budgets turn into change orders. Timelines slip. Your PDUFA date moves.
                     </p>
